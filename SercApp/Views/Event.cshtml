@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Event>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<body >	
+    <div id="main">
+        <div class="container">
+            <header>
+                <h2>@Model.Value("eventName")</h2>
+            </header>
+            <p>@Model.Value("eventDate")</p>
+            <p>@Model.Value("eventDescription")</p>
+        </div>
+    </div>
+</body>

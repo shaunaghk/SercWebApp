@@ -1,0 +1,22 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Privacy>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+<html>
+	<body >	
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<header>
+					<h2>@Model.Value("title")</h2>
+				</header>
+                <p>@Model.Value("detail")</p>
+			</div>
+		</div>
+	<!-- Main -->
+
+	</body>
+</html>

@@ -5,4 +5,23 @@
 
 @* the fun starts here *@
 
-<h1>HelpMenu</h1>
+<html>
+<body>
+	<!-- Main -->
+	<div id="main">
+		<div class="container">
+			<header>
+				<h2>Help</h2>
+			</header>		
+			<h2>Login</h2>
+			<p>Please visit https://localhost:44317/umbraco#/login/false to log in</p>
+			<h2>Edit</h2>
+			<p>Only admins can edit this website</p>
+			<h2>Read</h2>
+			<p>This website can be viewed by anyone with the URL please <a href="/">visit</a> the home page to start your journey</p>
+
+			<p>@Model.Value("help")</p>
+		</div>
+		<!-- Main -->
+</body>
+</html>

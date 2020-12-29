@@ -121,7 +121,7 @@
 			position: relative;
 			display: inline-block;
 			margin-top: 2em;
-			padding: 0.8em 1.5em;
+			padding: 10px 10px;
 			background: #1d1d1d;
 			border-radius: 6px;
 			text-decoration: none;
@@ -261,7 +261,7 @@
 	#header
 	{
 		position: relative;
-		background: #ddd url(../images/header.jpg) no-repeat center;
+		background: #ddd url(../images/open-day-2.png) no-repeat center;
 		background-size: cover;
 	}
 

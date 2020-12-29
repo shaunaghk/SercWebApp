@@ -1,0 +1,29 @@
+﻿@{
+	Layout = "Master.cshtml";
+}
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.CourseInformation>
+@using ContentModels = Umbraco.Web.PublishedModels;
+
+
+<html>
+	<body >	
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<header>
+					<h2>@Model.Value("subjectName")</h2>
+				</header>
+				<img src="images/PC1.jpg" alt=""/><br/>
+				<h3>Subject Area</h3>
+                <p> @Model.Value("subjectArea")<p>
+                <h3>Subject Level </h3>
+                <p> @Model.Value("subjectLevel")</p>
+                <h3>Description </h3>
+                <p>@Model.Value("description")</p>
+                <h3>@Model.Value("howToApply", fallback: Fallback.ToDefaultValue, defaultValue: new HtmlString("How to apply"))</h3>
+                <p>Email course co-ordinator @Model.Value("email", fallback: Fallback.ToDefaultValue, defaultValue: new HtmlString("apply@test.com"))</p>
+                <h3>@Model.Value("ucas", fallback: Fallback.ToDefaultValue, defaultValue: new HtmlString("UCAS Points Available"))</h3>
+                <p>@Model.Value("points", fallback: Fallback.ToDefaultValue, defaultValue: new HtmlString("160"))</p>
+			</div>
+		</div>
+	<!-- Main -->

@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Timetable>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<html>
+	<body >	
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<header>
+					<h2>Timetable</h2>
+					<br/>
+					<p>@Model.Value("timetableName")</p>
+					<p>@Model.Value("time")</p>
+				</header>
+			</div>
+		</div>
+	<!-- Main -->
+
+	</body>
+</html>
